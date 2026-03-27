@@ -213,7 +213,32 @@
   .section.white .feat-ico { background: var(--light); }
   .feat-ico svg { width: 14px; height: 14px; stroke: var(--text-muted); fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
   .feat-t { font-size: 14px; font-weight: 600; letter-spacing: -0.01em; color: var(--text-light); margin-bottom: 5px; }
-  .feat-d { font-size: 13px; line-height: 1.6; color: var(--text-muted); }
+ .feat-d { font-size: 13px; line-height: 1.6; color: var(--text-muted); }
+ .stat-grid {
+  display: grid; grid-template-columns: repeat(2, 1fr);
+  gap: 14px; margin-bottom: 22px;
+ }
+ .stat {
+  border: 1px solid var(--light-border); border-radius: 12px;
+  background: #fff; padding: 18px 18px 16px;
+ }
+ .stat-k {
+  font-size: 26px; font-weight: 700; letter-spacing: -0.02em; color: var(--text-light);
+ }
+ .stat-l {
+  margin-top: 4px; font-size: 12px; letter-spacing: 0.04em; text-transform: uppercase;
+  color: var(--text-muted);
+ }
+ .missing-grid {
+  display: grid; grid-template-columns: repeat(2, 1fr);
+  border: 1px solid var(--light-border); border-radius: 12px;
+  overflow: hidden; gap: 1px; background: var(--light-border);
+ }
+ .missing {
+  background: #fff; padding: 22px 20px;
+ }
+ .missing-t { font-size: 15px; font-weight: 600; letter-spacing: -0.01em; color: var(--text-light); margin-bottom: 8px; }
+ .missing-d { font-size: 13px; line-height: 1.65; color: var(--text-muted); }
 
   /* CTA band */
   .cta-band { padding: 88px 40px; background: var(--dark); text-align: center; }
@@ -260,10 +285,12 @@
    .nav-links .nav-link { display: none; }
    .hero { padding: 100px 24px 72px; }
    .section { padding: 60px 24px; }
-   .steps { grid-template-columns: 1fr; }
-   .feat-grid { grid-template-columns: 1fr; }
-   .cta-band { padding: 60px 24px; }
-   .footer { padding: 24px 20px; flex-direction: column; align-items: flex-start; }
+  .steps { grid-template-columns: 1fr; }
+  .feat-grid { grid-template-columns: 1fr; }
+  .stat-grid { grid-template-columns: 1fr; }
+  .missing-grid { grid-template-columns: 1fr; }
+  .cta-band { padding: 60px 24px; }
+  .footer { padding: 24px 20px; flex-direction: column; align-items: flex-start; }
   }
  </style>
 </head>
@@ -278,6 +305,7 @@
  <div class="nav-links">
   <a href="#how" class="nav-link">How it works</a>
   <a href="#features" class="nav-link">Features</a>
+  <a href="#missing" class="nav-link">What's missing</a>
   <a href="mailto:hello@.me" class="nav-cta">Get access</a>
  </div>
 </nav>
@@ -396,6 +424,47 @@
      <div class="feat-t">Conversation insights</div>
      <div class="feat-d">See what your agent says, how leads respond, and where handoffs happen. Improve over time with real data.</div>
     </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- WHAT'S MISSING -->
+<section class="section white" id="missing">
+ <div class="section-in">
+  <div class="fade-in">
+   <p class="s-label">Build status</p>
+   <h2 class="s-title">What’s missing before production launch.</h2>
+   <p class="s-sub">The backend foundations are in place, but key product workflows are still being built. Estimated completion: 45–50% overall.</p>
+  </div>
+  <div class="stat-grid fade-in">
+   <div class="stat">
+    <p class="stat-k">70–80%</p>
+    <p class="stat-l">Infrastructure complete</p>
+   </div>
+   <div class="stat">
+    <p class="stat-k">25–35%</p>
+    <p class="stat-l">User-facing product complete</p>
+   </div>
+  </div>
+  <div class="missing-grid fade-in">
+   <div class="missing">
+    <p class="missing-t">Campaign execution</p>
+    <p class="missing-d">Campaign editor, scheduling, email sending, and delivery state handling are still needed.</p>
+   </div>
+   <div class="missing">
+    <p class="missing-t">Contact operations</p>
+    <p class="missing-d">Contacts UI, CSV import, unsubscribe logic, and segmentation/tagging workflows are pending.</p>
+   </div>
+   <div class="missing">
+    <p class="missing-t">Templates + analytics</p>
+    <p class="missing-d">Template builder/preview and campaign analytics (open, click, bounce, unsubscribe) must be added.</p>
+   </div>
+   <div class="missing">
+    <p class="missing-t">AI actions + domains</p>
+    <p class="missing-d">Smart AI command center, action logs, and a settings screen for domain add/verify are still missing.</p>
    </div>
   </div>
  </div>
