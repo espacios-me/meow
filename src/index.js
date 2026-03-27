@@ -1,4 +1,8 @@
-<!DOCTYPE html>
+export default {
+  async fetch(request, env, ctx) {
+    const url = new URL(request.url);
+    if (url.pathname === "/meow" || url.pathname === "/meow/") {
+      const html = `<!DOCTYPE html>
 <html lang="en">
 <head>
  <meta charset="UTF-8" />
@@ -432,4 +436,11 @@
  faders.forEach(el => io.observe(el));
 </script>
 </body>
-</html>
+</html>`;
+      return new Response(html, {
+        headers: { "content-type": "text/html;charset=UTF-8" },
+      });
+    }
+    return new Response("Not Found", { status: 404 });
+  },
+};

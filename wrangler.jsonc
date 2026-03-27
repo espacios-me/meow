@@ -1,0 +1,14 @@
+{
+  "name": "meow-landing",
+  "main": "src/index.js",
+  "compatibility_date": "2026-03-27",
+  "routes": [
+    {
+      "pattern": "espacios.me/meow*",
+      "zone_name": "espacios.me"
+    }
+  ],
+  "observability": {
+    "enabled": true
+  }
+}
