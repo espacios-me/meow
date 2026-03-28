@@ -8,7 +8,7 @@ export default {
  <meta charset="UTF-8" />
  <meta name="viewport" content="width=device-width, initial-scale=1" />
  <title>e-meow· — by </title>
- <meta name="description" content="E-meow is where you build your AI agent. Define its voice, knowledge, and behavior — before it ever sends a message on WhatsApp." />
+ <meta name="description" content="E-meow is email marketing software to build campaigns, manage contacts, automate sends, track analytics, and verify domains from one dashboard." />
  <style>
   :root {
    --dark: #0D0D0D;
@@ -218,7 +218,6 @@ export default {
   .feat-ico svg { width: 14px; height: 14px; stroke: var(--text-muted); fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
   .feat-t { font-size: 14px; font-weight: 600; letter-spacing: -0.01em; color: var(--text-light); margin-bottom: 5px; }
   .feat-d { font-size: 13px; line-height: 1.6; color: var(--text-muted); }
-
   /* CTA band */
   .cta-band { padding: 88px 40px; background: var(--dark); text-align: center; }
   .cta-in { max-width: 500px; margin: 0 auto; }
@@ -264,10 +263,10 @@ export default {
    .nav-links .nav-link { display: none; }
    .hero { padding: 100px 24px 72px; }
    .section { padding: 60px 24px; }
-   .steps { grid-template-columns: 1fr; }
-   .feat-grid { grid-template-columns: 1fr; }
-   .cta-band { padding: 60px 24px; }
-   .footer { padding: 24px 20px; flex-direction: column; align-items: flex-start; }
+  .steps { grid-template-columns: 1fr; }
+  .feat-grid { grid-template-columns: 1fr; }
+  .cta-band { padding: 60px 24px; }
+  .footer { padding: 24px 20px; flex-direction: column; align-items: flex-start; }
   }
  </style>
 </head>
@@ -282,6 +281,7 @@ export default {
  <div class="nav-links">
   <a href="#how" class="nav-link">How it works</a>
   <a href="#features" class="nav-link">Features</a>
+  <a href="#platform" class="nav-link">Platform</a>
   <a href="mailto:hello@.me" class="nav-cta">Get access</a>
  </div>
 </nav>
@@ -307,8 +307,8 @@ export default {
 
  <div class="hero-inner">
   <p class="hero-label">e-meow · by </p>
-  <h1 class="hero-h1">Build the AI behind the conversation.</h1>
-  <p class="hero-p">E-meow is where you shape your agent's voice, knowledge, and behavior — before it ever sends a message on WhatsApp.</p>
+  <h1 class="hero-h1">Run modern email marketing from one dashboard.</h1>
+  <p class="hero-p">E-meow now includes full email marketing software: campaign creation, templates, contacts, analytics, automation, and domain verification.</p>
   <div class="hero-btns">
    <a href="mailto:hello@.me" class="btn-w">
     Request early access
@@ -316,7 +316,7 @@ export default {
    </a>
    <a href="#how" class="btn-ghost">See how it works</a>
   </div>
-  <p class="hero-note">Part of the ecosystem · built for WhatsApp</p>
+  <p class="hero-note">Part of the ecosystem · built for smart email operations</p>
  </div>
 </section>
 
@@ -325,24 +325,24 @@ export default {
  <div class="section-in">
   <div class="fade-in">
    <p class="s-label">How it works</p>
-   <h2 class="s-title">From setup to live agent in three steps.</h2>
-   <p class="s-sub">E-meow turns the complexity of AI configuration into a clean, structured workflow anyone can run.</p>
+   <h2 class="s-title">From setup to sent campaign in three steps.</h2>
+   <p class="s-sub">E-meow streamlines campaign planning, audience management, and delivery into one clean workflow.</p>
   </div>
   <div class="steps fade-in">
    <div class="step">
     <div class="step-n">01</div>
-    <div class="step-t">Define the agent</div>
-    <div class="step-d">Set its name, role, tone, and personality. Give it a purpose and a communication style that fits your business.</div>
+    <div class="step-t">Create your campaign</div>
+    <div class="step-d">Write campaign goals, subject lines, and content with template support and AI-assisted drafting.</div>
    </div>
    <div class="step">
     <div class="step-n">02</div>
-    <div class="step-t">Add knowledge</div>
-    <div class="step-d">Upload documents, FAQs, and product information. E-meow turns your content into context your agent can reason with.</div>
+    <div class="step-t">Build your audience</div>
+    <div class="step-d">Import contacts, segment lists, and exclude unsubscribed users to keep delivery clean and compliant.</div>
    </div>
    <div class="step">
     <div class="step-n">03</div>
-    <div class="step-t">Deploy to WhatsApp</div>
-    <div class="step-d">Connect to your WhatsApp number and go live. Your agent handles conversations — you stay in control.</div>
+    <div class="step-t">Schedule and send</div>
+    <div class="step-d">Send immediately or schedule for later, then monitor opens, clicks, bounces, and unsubscribe events.</div>
    </div>
   </div>
  </div>
@@ -355,50 +355,100 @@ export default {
  <div class="section-in">
   <div class="fade-in">
    <p class="s-label">Features</p>
-   <h2 class="s-title">Everything you need to build a capable agent.</h2>
-   <p class="s-sub">Full control over how your AI thinks, talks, and responds — without writing a single line of code.</p>
+   <h2 class="s-title">Everything you need to run email marketing.</h2>
+   <p class="s-sub">Operate campaigns end-to-end with templates, automation, compliance controls, and clear performance reporting.</p>
   </div>
   <div class="feat-grid fade-in">
    <div class="feat">
     <div class="feat-ico"><svg viewBox="0 0 24 24"><path d="M12 20h9M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></div>
     <div>
-     <div class="feat-t">Persona editor</div>
-     <div class="feat-d">Write your agent's identity in plain language. Set its name, tone, constraints, and how it communicates.</div>
+     <div class="feat-t">Campaign builder</div>
+     <div class="feat-d">Draft and launch campaigns quickly with reusable blocks, smart suggestions, and scheduling controls.</div>
     </div>
    </div>
    <div class="feat">
     <div class="feat-ico"><svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 016.5 17H20M4 4.5A2.5 2.5 0 016.5 7H20v13H6.5A2.5 2.5 0 014 17.5v-13z"/></svg></div>
     <div>
-     <div class="feat-t">Knowledge base</div>
-     <div class="feat-d">Upload PDFs, paste text, or link documents. Your agent learns from your content and references it accurately.</div>
+     <div class="feat-t">Contact manager</div>
+     <div class="feat-d">Manage subscribers, list segments, imports, and suppression lists from one central contact workspace.</div>
     </div>
    </div>
    <div class="feat">
     <div class="feat-ico"><svg viewBox="0 0 24 24"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/></svg></div>
     <div>
-     <div class="feat-t">Flow logic</div>
-     <div class="feat-d">Define how your agent qualifies, routes, and hands off conversations — based on your business rules.</div>
+     <div class="feat-t">Template library</div>
+     <div class="feat-d">Create and store branded templates for newsletters, product updates, onboarding, and lifecycle campaigns.</div>
     </div>
    </div>
    <div class="feat">
     <div class="feat-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 010 14.14M4.93 4.93a10 10 0 000 14.14M15.54 8.46a5 5 0 010 7.07M8.46 8.46a5 5 0 000 7.07"/></svg></div>
     <div>
-     <div class="feat-t">WhatsApp-native</div>
-     <div class="feat-d">Built for WhatsApp Business. Connects directly — no middleware, no extra tools, no technical setup required.</div>
+     <div class="feat-t">Analytics dashboard</div>
+     <div class="feat-d">Track delivery, open rate, click-through rate, and campaign ROI with actionable charting and logs.</div>
     </div>
    </div>
    <div class="feat">
     <div class="feat-ico"><svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></div>
     <div>
-     <div class="feat-t">Guardrails</div>
-     <div class="feat-d">Set hard limits on what your agent can and can't say. Stay compliant and on-brand across every conversation.</div>
+     <div class="feat-t">Compliance controls</div>
+     <div class="feat-d">Automatically suppress unsubscribes, tag inactive contacts, and maintain clean sending standards.</div>
     </div>
    </div>
    <div class="feat">
     <div class="feat-ico"><svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
     <div>
-     <div class="feat-t">Conversation insights</div>
-     <div class="feat-d">See what your agent says, how leads respond, and where handoffs happen. Improve over time with real data.</div>
+     <div class="feat-t">Domain & DNS setup</div>
+     <div class="feat-d">Verify sending domains, manage DNS records, and monitor domain health for reliable email delivery.</div>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- PLATFORM -->
+<section class="section white" id="platform">
+ <div class="section-in">
+  <div class="fade-in">
+   <p class="s-label">Platform modules</p>
+   <h2 class="s-title">Email marketing software now included.</h2>
+   <p class="s-sub">Run your entire workflow from one place: campaigns, contacts, templates, AI commands, logs, and domain management.</p>
+  </div>
+  <div class="feat-grid fade-in">
+   <div class="feat">
+    <div class="feat-ico"><svg viewBox="0 0 24 24"><path d="M12 20h9M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></div>
+    <div>
+     <div class="feat-t">AI command center</div>
+     <div class="feat-d">Send natural-language commands like “check unsubscribed and move to folder + tag,” with audit-safe logs.</div>
+    </div>
+   </div>
+   <div class="feat">
+    <div class="feat-ico"><svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
+    <div>
+     <div class="feat-t">Campaign logs</div>
+     <div class="feat-d">Capture every campaign event from generation to send outcomes for visibility, debugging, and reporting.</div>
+    </div>
+   </div>
+   <div class="feat">
+    <div class="feat-ico"><svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></div>
+    <div>
+     <div class="feat-t">Unsubscribe automation</div>
+     <div class="feat-d">Auto-detect unsubscribe events and update suppression lists instantly to protect sender reputation.</div>
+    </div>
+   </div>
+   <div class="feat">
+    <div class="feat-ico"><svg viewBox="0 0 24 24"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/></svg></div>
+    <div>
+     <div class="feat-t">Domain verification</div>
+     <div class="feat-d">Verify domains and DNS records in-app so teams can add or validate sending domains without leaving the dashboard.</div>
+    </div>
+   </div>
+   <div class="feat">
+    <div class="feat-ico"><svg viewBox="0 0 24 24"><path d="M8 6h13M8 12h13M8 18h13"/><path d="M3 6h.01M3 12h.01M3 18h.01"/></svg></div>
+    <div>
+     <div class="feat-t">API docs + webhooks</div>
+     <div class="feat-d">Expose backend API routes, payload examples, and webhook events so external tools can integrate quickly.</div>
     </div>
    </div>
   </div>
@@ -408,8 +458,8 @@ export default {
 <!-- CTA -->
 <section class="cta-band">
  <div class="cta-in fade-in">
-  <h2 class="cta-h">Your agent is ready to be built.</h2>
-  <p class="cta-p">E-meow is in early access. Join the list and be among the first to configure your AI on WhatsApp.</p>
+  <h2 class="cta-h">Your next email campaign is ready to launch.</h2>
+  <p class="cta-p">E-meow gives your team one place to build, send, optimize, and automate email marketing at scale.</p>
   <a href="mailto:hello@.me" class="btn-w">Request early access</a>
  </div>
 </section>
