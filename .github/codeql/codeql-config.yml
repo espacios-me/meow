@@ -1,0 +1,11 @@
+name: "CodeQL config"
+
+# Keep analysis focused on app source code in this repository.
+paths:
+  - src
+  - index.html
+
+paths-ignore:
+  - node_modules
+  - .wrangler
+  - dist
