@@ -7,8 +7,13 @@ export default {
 <head>
  <meta charset="UTF-8" />
  <meta name="viewport" content="width=device-width, initial-scale=1" />
- <title>e-meow· — by </title>
+ <title>e-meow· — by espacios</title>
  <meta name="description" content="E-meow is where you build your AI agent. Define its voice, knowledge, and behavior — before it ever sends a message on WhatsApp." />
+ <meta name="theme-color" content="#0D0D0D" />
+ <meta property="og:title" content="e-meow· — by espacios" />
+ <meta property="og:description" content="Build and configure your AI agent for WhatsApp before it sends a message." />
+ <meta property="og:type" content="website" />
+ <meta property="og:url" content="https://espacios.me/meow" />
  <style>
   :root {
    --dark: #0D0D0D;
@@ -278,6 +283,11 @@ export default {
   /* Scroll fade */
   .fade-in { opacity: 0; transform: translateY(10px); transition: opacity 0.55s ease, transform 0.55s ease; }
   .fade-in.is-vis { opacity: 1; transform: translateY(0); }
+  @media (prefers-reduced-motion: reduce) {
+   html { scroll-behavior: auto; }
+   *, *::before, *::after { animation: none !important; transition: none !important; }
+   .fade-in { opacity: 1; transform: none; }
+  }
 
   @keyframes fadeUp {
    from { opacity: 0; transform: translateY(12px); }
@@ -304,13 +314,13 @@ export default {
 <nav class="nav">
  <a href="#" class="nav-logo">
   <span class="nav-wordmark">e-meow<span class="nav-wordmark-dot"></span></span>
-  <span class="nav-by">by <a href="https://.me"></a></span>
+  <span class="nav-by">by espacios</span>
  </a>
  <div class="nav-links">
   <a href="#how" class="nav-link">How it works</a>
   <a href="#features" class="nav-link">Features</a>
   <a href="#missing" class="nav-link">What's missing</a>
-  <a href="mailto:hello@.me" class="nav-cta">Get access</a>
+  <a href="mailto:hello@espacios.me" class="nav-cta">Get access</a>
  </div>
 </nav>
 
@@ -334,11 +344,11 @@ export default {
  </svg>
 
  <div class="hero-inner">
-  <p class="hero-label">e-meow · by </p>
+  <p class="hero-label">e-meow · by espacios</p>
   <h1 class="hero-h1">Build the AI behind the conversation.</h1>
   <p class="hero-p">E-meow is where you shape your agent's voice, knowledge, and behavior — before it ever sends a message on WhatsApp.</p>
   <div class="hero-btns">
-   <a href="mailto:hello@.me" class="btn-w">
+   <a href="mailto:hello@espacios.me" class="btn-w">
     Request early access
     <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
    </a>
@@ -479,7 +489,7 @@ export default {
  <div class="cta-in fade-in">
   <h2 class="cta-h">Your agent is ready to be built.</h2>
   <p class="cta-p">E-meow is in early access. Join the list and be among the first to configure your AI on WhatsApp.</p>
-  <a href="mailto:hello@.me" class="btn-w">Request early access</a>
+  <a href="mailto:hello@espacios.me" class="btn-w">Request early access</a>
  </div>
 </section>
 
@@ -487,22 +497,26 @@ export default {
 <footer class="footer">
  <a href="#" class="f-brand">e-meow<span class="f-brand-dot"></span></a>
  <div class="f-links">
-  <a href="https://.me" class="f-link">.me</a>
+  <a href="https://espacios.me" class="f-link" rel="noopener noreferrer">espacios.me</a>
   <a href="e-meow-privacy.html" class="f-link">Privacy policy</a>
   <a href="e-meow-terms.html" class="f-link">Terms &amp; conditions</a>
-  <a href="mailto:hello@.me" class="f-link">Contact</a>
+  <a href="mailto:hello@espacios.me" class="f-link">Contact</a>
  </div>
- <p class="f-copy">© 2025 . All rights reserved.</p>
+ <p class="f-copy">© 2026 espacios. All rights reserved.</p>
 </footer>
 
 <script>
  const faders = document.querySelectorAll('.fade-in');
- const io = new IntersectionObserver(entries => {
-  entries.forEach(e => {
-   if (e.isIntersecting) { e.target.classList.add('is-vis'); io.unobserve(e.target); }
-  });
- }, { threshold: 0.1 });
- faders.forEach(el => io.observe(el));
+ if ('IntersectionObserver' in window) {
+  const io = new IntersectionObserver(entries => {
+   entries.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('is-vis'); io.unobserve(e.target); }
+   });
+  }, { threshold: 0.1 });
+  faders.forEach(el => io.observe(el));
+ } else {
+  faders.forEach(el => el.classList.add('is-vis'));
+ }
 </script>
 </body>
 </html>`;
